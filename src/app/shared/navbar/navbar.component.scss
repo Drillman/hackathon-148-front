@@ -1,0 +1,25 @@
+::ng-deep .mat-toolbar-row {
+  justify-content: space-between;
+}
+.active {
+  background-color: rgb(164, 175, 174);
+}
+.navbar {
+  position: fixed;
+  top:0;
+  z-index: 10;
+  background-color: #D2E1DF;
+  color: #000;
+}
+img {
+  margin-top: 0.7em;
+  height: 70px;
+}
+.margin{
+  margin-left: 5px;
+}
+a{
+  text-decoration: none;
+  border: none;
+  color:black;
+}

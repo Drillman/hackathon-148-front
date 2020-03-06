@@ -1,0 +1,21 @@
+<div class="card-container">
+  <mat-card>
+    <mat-card-header>
+      <h1>{{project.name}}</h1>
+    </mat-card-header>
+    <mat-card-content>
+      <p>{{project.description}}</p>
+      <p>{{project.status}}</p>
+      <p>
+        <span class="tag" *ngFor="let tag of project.tags">{{tag}}</span>
+      </p>
+      <hr>
+      <span>Liste des agents</span>
+      <ul>
+        <li *ngFor="let agent of project.projectUsers">
+          <a [routerLink]="['/backoffice/show-user/'+agent.agent.id]">{{agent.agent.firstname}} {{agent.agent.lastname}}</a>
+        </li>
+      </ul>
+    </mat-card-content>
+  </mat-card>
+</div>
